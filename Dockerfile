@@ -9,7 +9,7 @@ WORKDIR /go/src/github.com/latonaio
 
 COPY . .
 RUN go mod download
-RUN go build -o data-platform-api-orgaquantity-unit-deletes-rmq-kube ./
+RUN go build -o data-platform-api-quantity-unit-deletes-rmq-kube ./
 
 # Runtime Container
 FROM alpine:3.14
